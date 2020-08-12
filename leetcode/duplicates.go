@@ -1,10 +1,7 @@
-package main
+package leetcode
 
-import (
-	"fmt"
-)
-
-func hasDuplicates(numbers []int) bool {
+// HasDuplicates checks whether the slice has duplicates
+func HasDuplicates(numbers []int) bool {
 	hash := map[int]int{}
 
 	for i := 0; i < len(numbers); i++ {
@@ -16,9 +13,4 @@ func hasDuplicates(numbers []int) bool {
 	}
 
 	return false
-}
-
-func main() {
-	numbers := []int{1, 2, 3, 4, 7}
-	fmt.Println(hasDuplicates(numbers))
 }
