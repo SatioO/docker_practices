@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func findDuplicates(numbers []int) bool {
+func hasDuplicates(numbers []int) bool {
 	hash := map[int]int{}
 
 	for i := 0; i < len(numbers); i++ {
@@ -20,5 +20,5 @@ func findDuplicates(numbers []int) bool {
 
 func main() {
 	numbers := []int{1, 2, 3, 4, 7}
-	fmt.Println(findDuplicates(numbers))
+	fmt.Println(hasDuplicates(numbers))
 }
